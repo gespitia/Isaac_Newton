@@ -1,0 +1,247 @@
+body, html {
+    height: 100%;
+    margin: 0;
+    background: #121212; /* Fondo oscuro para el cuerpo */
+}
+
+.chat {
+    margin-top: auto;
+    margin-bottom: auto;
+}
+
+.card {
+    height: 650px;
+    border-radius: 15px !important;
+    background-color: #1e1e1e !important; /* Fondo oscuro para la tarjeta */
+}
+
+.contacts_body {
+    padding: 0.75rem 0 !important;
+    overflow-y: auto;
+    white-space: nowrap;
+    background-color: #1e1e1e; /* Fondo oscuro para la lista de contactos */
+}
+
+.msg_card_body {
+    overflow-y: auto;
+    background-color: #1e1e1e; /* Fondo oscuro para el cuerpo del mensaje */
+}
+
+.card-header {
+    border-radius: 15px 15px 0 0 !important;
+    border-bottom: 0 !important;
+    background-color: #128c7e; /* Verde oscuro de WhatsApp para el encabezado */
+    color: white; /* Texto blanco en el encabezado */
+}
+
+.card-footer {
+    border-radius: 0 0 15px 15px !important;
+    border-top: 0 !important;
+    background-color: #1e1e1e; /* Fondo oscuro para el pie de la tarjeta */
+}
+
+.container {
+    align-content: center;
+}
+
+.search {
+    border-radius: 15px 0 0 15px !important;
+    background-color: #333 !important; /* Fondo gris oscuro para la barra de búsqueda */
+    border: 0 !important;
+    color: #ddd !important; /* Texto gris claro en la barra de búsqueda */
+}
+
+.search:focus {
+    box-shadow: none !important;
+    outline: 0px !important;
+}
+
+.type_msg {
+    background-color: #333 !important; /* Fondo gris oscuro para el área de escritura */
+    border: 0 !important;
+    color: #ddd !important; /* Texto gris claro en el área de escritura */
+    height: 60px !important;
+    overflow-y: auto;
+}
+
+.type_msg:focus {
+    box-shadow: none !important;
+    outline: 0px !important;
+}
+
+.attach_btn, .send_btn, .search_btn {
+    border-radius: 15px;
+    background-color: #128c7e !important; /* Verde oscuro para los botones */
+    border: 0 !important;
+    color: white !important;
+    cursor: pointer;
+}
+
+.contacts {
+    list-style: none;
+    padding: 0;
+}
+
+.contacts li {
+    width: 100% !important;
+    padding: 5px 10px;
+    margin-bottom: 15px !important;
+    background-color: #2e2e2e; /* Fondo gris oscuro para cada contacto */
+}
+
+.active {
+    background-color: #333; /* Color de fondo para el contacto activo */
+}
+
+.user_img, .user_img_msg {
+    height: 70px;
+    width: 70px;
+    border: 1.5px solid #3a3a3a; /* Borde gris oscuro para las imágenes de usuario */
+}
+
+.user_img_msg {
+    height: 40px;
+    width: 40px;
+}
+
+.img_cont {
+    position: relative;
+    height: 70px;
+    width: 70px;
+}
+
+.img_cont_msg {
+    height: 40px;
+    width: 40px;
+}
+
+.online_icon {
+    position: absolute;
+    height: 15px;
+    width: 15px;
+    background-color: #25d366; /* Verde característico de WhatsApp para el ícono en línea */
+    border-radius: 50%;
+    bottom: 0.2em;
+    right: 0.4em;
+    border: 1.5px solid #1e1e1e; /* Borde oscuro para el ícono en línea */
+}
+
+.offline {
+    background-color: #a0a0a0 !important; /* Gris claro para el estado fuera de línea */
+}
+
+.user_info {
+    margin-top: auto;
+    margin-bottom: auto;
+    margin-left: 15px;
+}
+
+.user_info span {
+    font-size: 16px;
+    color: #ddd; /* Texto gris claro para el nombre de usuario */
+}
+
+.user_info p {
+    font-size: 12px;
+    color: rgba(255, 255, 255, 0.5); /* Gris muy claro para la información adicional */
+}
+
+.video_cam {
+    margin-left: 50px;
+    margin-top: 5px;
+}
+
+.video_cam span {
+    color: #ddd;
+    font-size: 20px;
+    cursor: pointer;
+    margin-right: 20px;
+}
+
+.msg_cotainer {
+    margin-top: auto;
+    margin-bottom: auto;
+    margin-left: 10px;
+    border-radius: 25px;
+    background-color:#a0d6a5; /* Fondo oscuro para los mensajes recibidos */
+    padding: 10px;
+    position: relative;
+}
+
+.msg_cotainer_send {
+    margin-top: auto;
+    margin-bottom: auto;
+    margin-right: 10px;
+    border-radius: 25px;
+    background-color: #128c7e; /* Verde oscuro para los mensajes enviados */
+    padding: 10px;
+    position: relative;
+}
+
+.msg_time {
+    position: absolute;
+    left: 0;
+    bottom: -15px;
+    color: rgba(255, 255, 255, 0.5); /* Gris claro para la hora del mensaje */
+    font-size: 10px;
+}
+
+.msg_time_send {
+    position: absolute;
+    right: 0;
+    bottom: -15px;
+    color: rgba(255, 255, 255, 0.5); /* Gris claro para la hora del mensaje enviado */
+    font-size: 10px;
+}
+
+.msg_head {
+    position: relative;
+}
+
+#action_menu_btn {
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    color: white;
+    cursor: pointer;
+    font-size: 20px;
+}
+
+.action_menu {
+    z-index: 1;
+    position: absolute;
+    padding: 15px 0;
+    background-color: rgba(0, 0, 0, 0.7); /* Fondo oscuro para el menú de acciones */
+    color: white;
+    border-radius: 15px;
+    top: 30px;
+    right: 15px;
+    display: none;
+}
+
+.action_menu ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.action_menu ul li {
+    width: 100%;
+    padding: 10px 15px;
+    margin-bottom: 5px;
+}
+
+.action_menu ul li i {
+    padding-right: 10px;
+}
+
+.action_menu ul li:hover {
+    cursor: pointer;
+    background-color: rgba(255, 255, 255, 0.1); /* Fondo muy oscuro al pasar el ratón */
+}
+
+@media(max-width: 576px) {
+    .contacts_card {
+        margin-bottom: 15px !important;
+    }
+}
